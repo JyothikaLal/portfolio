@@ -25,7 +25,7 @@ const Experience = () => {
               <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 mb-6">
                 <div>
                   <h3 className="text-2xl font-semibold">
-                    AI/ML Intern
+                    Intern
                   </h3>
 
                   <p className="text-cyan-400 mt-1">
