@@ -29,7 +29,7 @@ const projects = [
       "Streamlit",
       "Solar Analytics",
     ],
-    github: "https://github.com/JyothikaLal/solar-pv-maintenance-dashboard",
+    github: "https://github.com/JyothikaLal/Solar-PV-Multimodal-Maintenance",
     image: "/images/solar-pv-maintenace-dashboard.png",
   },
 
