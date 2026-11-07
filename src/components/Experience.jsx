@@ -22,17 +22,17 @@ const Experience = () => {
               </div>
 
               <p className="mb-6 max-w-xl text-base leading-relaxed text-slate-400">
-                Contributing to NexGen Athlete, a multi-tenant sports management SaaS,
-                with a focus on Performance & Assessment Management. Developed the
-                foundational PostgreSQL database layer and implemented version-controlled
-                Alembic migrations using FastAPI and SQLAlchemy.
+                Contributing to NexGen Athlete, a multi-tenant sports management SaaS
+                platform using Python, FastAPI, PostgreSQL, and SQLAlchemy. Focused on
+                backend infrastructure, database design, dynamic access control, and
+                tenant security.
               </p>
 
               <div className="mb-7 space-y-3">
                 {[
-                  "Developed the foundational PostgreSQL database layer.",
-                  "Implemented version-controlled Alembic migrations for Sprint 1 tables.",
-                  "Validated migration reliability through upgrade, downgrade, and re-upgrade workflows.",
+                  "Developed core database models and backend infrastructure for organizations, users, memberships, and access control.",
+                  "Implemented dynamic Role-Based Access Control (RBAC) and strengthened tenant isolation through organization-scoped authorization.",
+                  "Engineered Alembic database migrations, idempotent seeding workflows, and automated regression tests.",
                 ].map((item, index) => (
                   <div key={item} className="flex gap-3">
                     <span className="font-mono text-sm font-semibold text-cyan-400">
