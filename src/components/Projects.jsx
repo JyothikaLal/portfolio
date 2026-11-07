@@ -2,92 +2,64 @@ import projects from "../data/projects"
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-24 px-6">
-      <div className="max-w-6xl mx-auto">
-
-        {/* Section heading */}
+    <section id="projects" className="section-shell px-4 py-24 sm:px-6">
+      <div className="mx-auto max-w-6xl">
         <div className="mb-12">
-          <p className="text-cyan-400 font-medium mb-2">
-            SELECTED WORK
-          </p>
-
-          <h2 className="text-3xl md:text-4xl font-bold">
-            Projects
-          </h2>
-
-          <p className="text-slate-400 mt-4 max-w-2xl">
-            A selection of AI/ML and data-driven applications I've built,
+          <p className="eyebrow mb-3">Selected work</p>
+          <h2 className="section-title">Projects</h2>
+          <p className="mt-4 max-w-2xl text-base text-slate-400 sm:text-lg">
+            A selection of AI/ML and data-driven applications I&apos;ve built,
             combining intelligent models with practical software systems.
           </p>
         </div>
 
-        {/* Projects grid */}
-        <div className="grid md:grid-cols-2 gap-6">
-
+        <div className="grid gap-6 md:grid-cols-2">
           {projects.map((project) => (
             <article
               key={project.title}
-              className="group overflow-hidden rounded-2xl border border-slate-800 bg-slate-900/50 hover:border-cyan-400/50 transition-all duration-300"
+              className="group surface-card elevate-tilt overflow-hidden rounded-3xl"
             >
-
-              {/* Project image */}
-              <div className="relative overflow-hidden aspect-[16/9] bg-slate-950 border-b border-slate-800">
+              <div className="relative aspect-[16/9] overflow-hidden border-b border-slate-800 bg-slate-950">
                 <img
                   src={project.image}
                   alt={`${project.title} project screenshot`}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
 
-              {/* Project content */}
               <div className="p-6">
-
-                {/* Subtitle */}
-                <p className="text-sm text-cyan-400 mb-2">
-                  {project.subtitle}
-                </p>
-
-                {/* Title */}
-                <h3 className="text-xl font-semibold mb-3">
-                  {project.title}
-                </h3>
-
-                {/* Description */}
-                <p className="text-slate-400 leading-relaxed mb-5">
+                <p className="mb-2 text-sm font-medium text-cyan-400">{project.subtitle}</p>
+                <h3 className="mb-3 text-xl font-semibold text-white">{project.title}</h3>
+                <p className="mb-5 text-base leading-relaxed text-slate-400">
                   {project.description}
                 </p>
 
-                {/* Technologies */}
-                <div className="flex flex-wrap gap-2 mb-5">
+                <div className="mb-5 flex flex-wrap gap-2">
                   {project.technologies.map((technology) => (
                     <span
                       key={technology}
-                      className="text-xs px-3 py-1.5 rounded-full bg-slate-800 text-slate-300"
+                      className="tech-pill px-3 py-1.5 text-xs"
                     >
                       {technology}
                     </span>
                   ))}
                 </div>
 
-                {/* GitHub */}
                 <a
                   href={project.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center text-sm font-semibold text-cyan-400 hover:text-cyan-300 transition"
+                  className="inline-flex items-center text-sm font-semibold text-cyan-400 transition-colors hover:text-cyan-300"
                 >
                   View on GitHub
-                  <span className="ml-2 group-hover:translate-x-1 transition-transform">
+                  <span className="ml-2 transition-transform duration-200 group-hover:translate-x-1">
                     →
                   </span>
                 </a>
-
               </div>
             </article>
           ))}
-
         </div>
-
       </div>
     </section>
   )

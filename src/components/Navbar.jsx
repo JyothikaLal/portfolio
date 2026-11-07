@@ -1,32 +1,25 @@
 const Navbar = () => {
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 border-b border-slate-800/70 bg-slate-950/85 backdrop-blur">
-      <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-        <a
-          href="#home"
-          className="font-bold tracking-tight"
-        >
+    <nav className="fixed inset-x-0 top-0 z-50 border-b border-slate-800/60 bg-slate-950/75 backdrop-blur-xl">
+      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
+        <a href="#home" className="text-lg font-bold tracking-[0.18em] text-white">
           JYOTHIKA<span className="text-cyan-400">.</span>
         </a>
 
-        <div className="hidden md:flex items-center gap-8 text-sm text-slate-400">
-          <a href="#home" className="hover:text-white transition">
+        <div className="hidden items-center gap-8 text-sm md:flex">
+          <a href="#home" className="nav-link">
             Home
           </a>
-
-          <a href="#skills" className="hover:text-white transition">
+          <a href="#skills" className="nav-link">
             Skills
           </a>
-
-          <a href="#experience" className="hover:text-white transition">
+          <a href="#experience" className="nav-link">
             Experience
           </a>
-
-          <a href="#projects" className="hover:text-white transition">
+          <a href="#projects" className="nav-link">
             Projects
           </a>
-
-          <a href="#contact" className="hover:text-white transition">
+          <a href="#contact" className="nav-link">
             Contact
           </a>
         </div>

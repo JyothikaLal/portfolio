@@ -17,6 +17,23 @@ const projects = [
   },
 
   {
+    title: "Solar PV Maintenance Dashboard",
+    subtitle: "AI-Driven Solar Asset Monitoring",
+    description:
+      "An end-to-end photovoltaic maintenance system that combines telemetry regression and thermal anomaly detection into a decision-support platform for solar asset monitoring.",
+    technologies: [
+      "Python",
+      "Machine Learning",
+      "Computer Vision",
+      "Time Series",
+      "Streamlit",
+      "Solar Analytics",
+    ],
+    github: "https://github.com/JyothikaLal/solar-pv-maintenance-dashboard",
+    image: "/images/solar-pv-maintenace-dashboard.png",
+  },
+
+  {
     title: "AI Interview Prep Coach",
     subtitle: "AI-Powered Interview Practice Platform",
     description:

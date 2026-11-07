@@ -1,24 +1,21 @@
 const Contact = () => {
   return (
-    <section id="contact" className="py-24 px-6">
-      <div className="max-w-4xl mx-auto text-center">
-        <p className="text-cyan-400 font-medium mb-3">
-          GET IN TOUCH
-        </p>
-
-        <h2 className="text-4xl md:text-5xl font-bold mb-6">
-          Let's connect.
+    <section id="contact" className="section-shell px-4 py-24 sm:px-6">
+      <div className="mx-auto max-w-4xl rounded-[2rem] border border-slate-800/80 bg-slate-900/50 p-8 text-center shadow-[0_20px_60px_rgba(15,23,42,0.6)] backdrop-blur-sm md:p-12">
+        <p className="eyebrow mb-3">Get in touch</p>
+        <h2 className="mb-6 text-4xl font-bold tracking-[-0.05em] text-white md:text-5xl">
+          Let&apos;s connect.
         </h2>
 
-        <p className="text-slate-400 max-w-xl mx-auto mb-10">
-          I'm currently exploring entry-level opportunities in AI/ML,
-          Computer Vision, Data Science, Data Analytics, and Applied AI.
+        <p className="mx-auto mb-10 max-w-2xl text-base leading-relaxed text-slate-400 md:text-lg">
+          I&apos;m currently exploring entry-level opportunities in AI/ML, Computer Vision,
+          Data Science, Data Analytics, and Applied AI.
         </p>
 
         <div className="flex flex-wrap justify-center gap-4">
           <a
             href="mailto:jyothikalal.km@gmail.com"
-            className="px-5 py-3 rounded-lg bg-cyan-400 text-slate-950 font-semibold hover:bg-cyan-300 transition"
+            className="btn-primary px-6 py-3 text-sm md:text-base"
           >
             jyothikalal.km@gmail.com
           </a>
@@ -27,7 +24,7 @@ const Contact = () => {
             href="https://github.com/JyothikaLal"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-5 py-3 rounded-lg border border-slate-700 hover:border-cyan-400 transition"
+            className="btn-secondary px-6 py-3 text-sm md:text-base"
           >
             GitHub
           </a>
@@ -36,7 +33,7 @@ const Contact = () => {
             href="https://www.linkedin.com/in/jyothika-lal-k-m-42b845250/"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-5 py-3 rounded-lg border border-slate-700 hover:border-cyan-400 transition"
+            className="btn-secondary px-6 py-3 text-sm md:text-base"
           >
             LinkedIn
           </a>
